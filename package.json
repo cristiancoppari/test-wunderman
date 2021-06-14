@@ -1,0 +1,24 @@
+{
+  "name": "basicProjectSetup",
+  "version": "1.0.0",
+  "description": "Basic setup for web development with developing enviroment and build process",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass src/scss/main.scss public/css/styles.css -w",
+    "devServer": "live-server",
+    "start": "npm-run-all --parallel devServer watch:sass",
+    "compile:sass": "node-sass src/scss/main.scss public/css/styles.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' public/css/styles.comp.css -o public/css/styles.prefix.css",
+    "compress:css": "node-sass public/css/styles.prefix.css public/css/styles.min.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.1.0",
+    "node-sass": "^5.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.1",
+    "postcss-cli": "^8.3.1"
+  }
+}

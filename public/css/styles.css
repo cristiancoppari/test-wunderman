@@ -1,0 +1,76 @@
+/*
+0 - 320px: phone-sm
+321 - 375px: phone-md
+376 - 425px: phone-lg
+426 - 768px: tablet
+769 - 1024px: desktop
+1025 - 1440px: desktop-lg
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em = 16px
+*/
+/* @mixin respond($breakpoint) {
+  @if $breakpoint == phone-small {
+    @media only screen and (max-width: 20em) {
+      @content;
+    }
+  }
+  @if $breakpoint == phone-lg {
+    @media only screen and (max-width: 26.5625em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 48) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop {
+    @media only screen and (max-width: 64em) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop-lg {
+    @media only screen and (min-width: 90em) {
+      @content;
+    }
+  }
+}*/
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-25px); }
+  80% { }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Poppins", sans-serif, sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #000; }
