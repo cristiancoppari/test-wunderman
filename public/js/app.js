@@ -1,3 +1,2 @@
-window.addEventListener("load", () => {
-  console.log("hello world");
-});
+// Global Imports
+import "./utils/navbar.js";

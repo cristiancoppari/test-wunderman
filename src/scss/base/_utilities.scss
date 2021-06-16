@@ -1,0 +1,45 @@
+/* CONTAINERS */
+.container {
+  max-width: 1440px;
+  padding: 0 2rem;
+  margin: 0 auto;
+
+  @include respond(tablet) {
+    padding: 0 3rem;
+  }
+
+  @include respond(desktop) {
+    padding: 0 5rem;
+  }
+
+  @include respond(desktop) {
+    padding: 0 7rem;
+  }
+}
+
+.container-full-width {
+  max-width: 100vw;
+  padding: 0 2rem;
+  margin: 0 auto;
+
+  @include respond(tablet) {
+    padding: 0 3rem;
+  }
+
+  @include respond(desktop) {
+    padding: 0 5rem;
+  }
+
+  @include respond(desktop) {
+    padding: 0 7rem;
+  }
+}
+
+.btn-primary {
+  background: $color-primary;
+  border: $color-primary;
+
+  &:hover {
+    background: darken($color-primary, 10);
+  }
+}

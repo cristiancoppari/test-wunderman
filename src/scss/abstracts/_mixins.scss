@@ -18,7 +18,7 @@ $breakpoint arguement choices:
 
 // DESKTOP FIRST
 
-@mixin respond($breakpoint) {
+/* @mixin respond($breakpoint) {
   @if $breakpoint == phone-sm {
     @media only screen and (max-width: 20em) {
       @content;
@@ -49,34 +49,34 @@ $breakpoint arguement choices:
       @content;
     }
   }
-}
+} */
 
 // MOBILE FIRST
 
-/* @mixin respond($breakpoint) {
+@mixin respond($breakpoint) {
   @if $breakpoint == phone-small {
-    @media only screen and (max-width: 20em) {
+    @media (min-width: 375px) {
       @content;
     }
   }
   @if $breakpoint == phone-lg {
-    @media only screen and (max-width: 26.5625em) {
+    @media (min-width: 425px) {
       @content;
     }
   }
   @if $breakpoint == tablet {
-    @media only screen and (max-width: 48) {
+    @media (min-width: 768px) {
       @content;
     }
   }
   @if $breakpoint == desktop {
-    @media only screen and (max-width: 64em) {
+    @media (min-width: 1024px) {
       @content;
     }
   }
   @if $breakpoint == desktop-lg {
-    @media only screen and (min-width: 90em) {
+    @media (min-width: 1440px) {
       @content;
     }
   }
-}*/
+}

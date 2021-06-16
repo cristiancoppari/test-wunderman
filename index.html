@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -14,19 +29,154 @@
   </head>
 
   <body>
-    <!-- Navigation -->
-    <nav>Navegacion</nav>
+    <!-- Header -->
+    <header class="header">
+      <!-- Navigation -->
+      <nav class="nav">
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <div class="logo-wrapper">
+            <img
+              src="./public/images/bootstrap-logo.svg"
+              alt="Speed App Logo"
+            />
+          </div>
+
+          <button class="btn-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <ul class="nav-list p-0 m-0">
+            <li class="nav-item">
+              <a href="#info">Info</a>
+            </li>
+            <li class="nav-item">
+              <a href="#root-directory">Root</a>
+            </li>
+            <li class="nav-item">
+              <a href="#extra-content">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Hero -->
+      <section class="hero d-flex align-items-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 m-auto">
+              <h1>Root App</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Consectetur, doloremque.
+              </p>
+              <button class="btn btn-primary">View more</button>
+            </div>
+            <div class="col-12 col-md-6 d-none d-md-block">
+              <div class="img-wrapper">
+                <img
+                  src="https://picsum.photos/300/300"
+                  alt="image-1"
+                  class="d-block mx-auto w-100"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
 
     <!-- Main -->
     <main>
       <!-- Section Info -->
-      <section class="info">Info</section>
+      <section class="info container py-4" id="info">
+        <!-- Article -->
+        <article
+          class="
+            article
+            d-flex
+            flex-column flex-md-row
+            justify-content-evenly
+            py-4
+          "
+        >
+          <div class="side-left py-md-5 align-self-md-center">
+            <h3 class="article-title">Lorem, ipsum dolor.</h3>
+            <p class="article-paragraph">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor,
+              impedit ipsam natus recusandae mollitia rerum numquam architecto
+              sunt tenetur atque est saepe repellendus eum error? Voluptate
+              repellendus id ex placeat.
+            </p>
+          </div>
+          <div class="side-right">
+            <div class="img-wrapper">
+              <img src="https://picsum.photos/300/300" alt="image-1" />
+            </div>
+          </div>
+        </article>
+        <!-- Article -->
+        <article
+          class="
+            article
+            d-flex
+            flex-column flex-md-row-reverse
+            justify-content-evenly
+            py-4
+          "
+        >
+          <div class="side-left py-md-5 align-self-md-center text-md-end">
+            <h3 class="article-title">Lorem, ipsum dolor.</h3>
+            <p class="article-paragraph">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor,
+              impedit ipsam natus recusandae mollitia rerum numquam architecto
+              sunt tenetur atque est saepe repellendus eum error? Voluptate
+              repellendus id ex placeat.
+            </p>
+          </div>
+          <div class="side-right">
+            <div class="img-wrapper">
+              <img src="https://picsum.photos/300/300" alt="image-1" />
+            </div>
+          </div>
+        </article>
+        <!-- Article -->
+        <article
+          class="
+            article
+            d-flex
+            flex-column flex-md-row
+            justify-content-evenly
+            py-4
+          "
+        >
+          <div class="side-left py-md-5 align-self-md-center">
+            <h3 class="article-title">Lorem, ipsum dolor.</h3>
+            <p class="article-paragraph">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor,
+              impedit ipsam natus recusandae mollitia rerum numquam architecto
+              sunt tenetur atque est saepe repellendus eum error? Voluptate
+              repellendus id ex placeat.
+            </p>
+          </div>
+          <div class="side-right">
+            <div class="img-wrapper">
+              <img src="https://picsum.photos/300/300" alt="image-1" />
+            </div>
+          </div>
+        </article>
+      </section>
 
       <!-- Section Root Directory -->
-      <section class="root-directory">Root Directory</section>
+      <section class="root-directory" id="root-directory" style="height: 100vh">
+        Root Directory
+      </section>
 
       <!-- Section Extra Content -->
-      <section class="extra-content">Extra Content</section>
+      <section class="extra-content" id="extra-content" style="height: 100vh">
+        Extra Content
+      </section>
     </main>
 
     <!-- Footer -->

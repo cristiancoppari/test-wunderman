@@ -1,0 +1,9 @@
+.info {
+  .side-left {
+    width: auto;
+
+    @include respond(tablet) {
+      width: 50%;
+    }
+  }
+}
