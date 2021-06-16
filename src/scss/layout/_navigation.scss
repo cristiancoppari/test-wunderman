@@ -1,16 +1,16 @@
 /* Nagitation */
 .nav {
-  position: fixed;
+  // position: fixed;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: space-between;
+  // align-items: center;
 
   height: 4rem;
-  width: 100vw;
+  width: 100%;
 
-  box-shadow: $shadow;
+  // box-shadow: $shadow;
   background-color: $color-white;
 
   z-index: 999;
@@ -18,15 +18,15 @@
   .logo-wrapper {
     height: 2rem;
 
-    img {
-      height: 100%;
-    }
+    // img {
+    //   height: 100%;
+    // }
   }
 
   // Btn Toggle
   .btn-toggle {
     // padding: 2rem;
-    font-size: 1.5rem;
+    // font-size: 1.5rem;
     cursor: pointer;
 
     transition: all 0.2s ease;
@@ -35,49 +35,37 @@
       color: $color-primary;
     }
 
-    @include respond(tablet) {
-      display: none;
-    }
+    // @include respond(tablet) {
+    //   display: none;
+    // }
   }
 
   // Nav List
   &-list {
     display: block;
-
-    background-color: $color-white;
-
     position: fixed;
     top: 4rem;
     right: 0;
-
     height: 0;
-    width: 100vw;
-
+    width: 100%;
+    background-color: $color-white;
     overflow: hidden;
-
     z-index: 999;
-
     transition: all 0.3s ease-in;
-
-    /* &.show-links {
-      height: 13.5rem;
-    } */
 
     @include respond(tablet) {
       position: static;
-
       width: max-content;
       height: auto;
-
       display: flex;
       flex-direction: row;
     }
   }
 
   // Nav Item
-  &-item a {
-    display: block;
-    padding: 1rem 2rem;
+  &-item {
+    // display: block;
+    // padding: 1rem 2rem;
     cursor: pointer;
 
     font-weight: 600;
@@ -87,19 +75,21 @@
     &:hover {
       // color: $color-gray-light;
       background-color: $color-gray-light;
-      color: $color-primary;
+      a {
+        color: $color-primary;
+      }
     }
 
     @include respond(tablet) {
-      padding: 0;
-      margin: 0 0 0 1rem;
+      // padding: 0;
+      // margin: 0 0 0 1rem;
 
       &:hover {
         // color: $color-gray-light;
         background-color: transparent;
         color: lighten($color-primary, 15%);
 
-        transform: translatey(-0.2rem);
+        transform: translateY(-0.2rem);
       }
     }
   }

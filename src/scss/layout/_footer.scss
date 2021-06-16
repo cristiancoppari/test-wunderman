@@ -1,0 +1,32 @@
+.footer {
+  background-color: $color-black;
+  color: $color-white;
+
+  &-top {
+    a {
+      color: $color-white;
+      font-size: 0.85rem;
+    }
+  }
+
+  &-bottom {
+    background-color: $color-gray-light;
+    color: $color-gray-dark;
+    .nav-item {
+      a {
+        color: $color-gray-dark;
+        font-size: 1.5rem;
+      }
+
+      &:hover {
+        a {
+          color: $colo-primary;
+        }
+      }
+    }
+  }
+
+  small {
+    font-size: 0.8rem;
+  }
+}

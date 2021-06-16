@@ -1,0 +1,54 @@
+[
+  {
+    "type": "dir",
+    "name": "app",
+    "children": [
+      {
+        "type": "dir",
+        "name": "public",
+        "children": [
+          {
+            "type": "dir",
+            "name": "css",
+            "children": [
+              {
+                "type": "file",
+                "name": "styles.css"
+              },
+              {
+                "type": "file",
+                "name": "styles.min.css"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "dir",
+        "name": "src",
+        "children": [
+          {
+            "type": "dir",
+            "name": "scss",
+            "children": [
+              {
+                "type": "dir",
+                "name": "layout",
+                "children": [
+                  {
+                    "type": "file",
+                    "name": "_header.scss"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "file",
+        "name": "index.html"
+      }
+    ]
+  }
+]
