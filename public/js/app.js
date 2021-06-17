@@ -10,9 +10,13 @@ import { URL } from "./utils/utils.js";
 
 // Init Function
 const init = async () => {
-  const data = await fetchData(URL);
-  const folderTree = displayData(data);
-  presentData(folderTree);
+  try {
+    const data = await fetchData(URL);
+    const folderTree = displayData(data);
+    presentData(folderTree);
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 window.addEventListener("load", init);
