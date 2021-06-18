@@ -1,6 +1,5 @@
 // Global Imports
 import "./utils/navbar.js";
-import "./utils/fetchData.js";
 
 // Name Imports
 import { fetchData } from "./utils/fetchData.js";
