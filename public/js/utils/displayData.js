@@ -8,42 +8,42 @@ const createFolder = (item, rootFolder) => {
 };
 
 /* THIS IS WORKING */
-// function displayData(data) {
-//   // console.log(data);
-//   let htmlRetStr = "<ul class='folder-container'>";
-//   for (let key in data) {
-//     console.log(data[key]);
-//     if (typeof data[key] == "object" && data[key] != null) {
-//       // console.log(data[key]);
-//       // console.log(htmlRetStr);
-//       htmlRetStr += `${displayData(data[key])}</ul></li>`;
-//     } else if (data[key] == "dir") {
-//       htmlRetStr += `<li class='folder-item'>${data["name"]}</li><li class='folder-wrapper'>`;
-//     } else if (key == "name" && data["type"] != "dir") {
-//       htmlRetStr += `<li class='file-item'>${data["name"]}</li>`;
-//     }
-//   }
-//   return htmlRetStr;
-// }
-
-/* WORKING ON THIS */
-const displayData = (array) => {
-  // Iterate over the array of objects (directories)
-  for (let obj of array) {
-    // Iterate over the properties in the objects
-    for (let prop in obj) {
-      //Check if the value of a property is an object
-      if (typeof obj[prop] === "object" && obj[prop] !== null) {
-        // const folderContainer = document.createElement("ul");
-        // console.log(displayData(obj[prop]));
-        displayData(obj[prop]);
-      } else if (obj[prop] === "dir") {
-        console.log(obj["name"]);
-      } else if (obj[prop] === "file") {
-        console.log(obj["name"]);
-      }
+/* function displayData(data) {
+  let htmlRetStr = "<ul class='folder-container'>";
+  for (let key in data) {
+    if (typeof data[key] == "object" && data[key] != null) {
+      htmlRetStr += `${displayData(data[key])}</ul></li>`;
+    } else if (data[key] == "dir") {
+      htmlRetStr += `<li class='folder-item'>${data["name"]}</li><li class='folder-wrapper'>`;
+    } else if (key == "name" && data["type"] != "dir") {
+      htmlRetStr += `<li class='file-item'>${data["name"]}</li>`;
     }
   }
+  return htmlRetStr;
+} */
+
+/* With JSON as Object */
+const displayData = (obj) => {
+  let htmlRetStr = `<ul class='folder-container'>`;
+  let folder;
+  for (let key in obj) {
+    if (typeof obj[key] == "object" && obj[key] != null) {
+      /* Template strings */
+      htmlRetStr += `${displayData(obj[key])}</ul></li>`;
+      // htmlRetStr += displayData( obj[key] );
+      // htmlRetStr += '</ul></li>';
+    } else if (obj[key] == "dir") {
+      /* Template strings */
+      htmlRetStr += `<li class='folder-item'><i class="fas fa-folder"></i>${obj["name"]}</li><li class='folder-wrapper'>`;
+      // htmlRetStr += "<li class='folder-item'>" + data["name"]+"</li><li class='folder-wrapper'>";
+      // console.log(`carpeta: ${obj["name"]} dentro de ${folder}`);
+    } else if (key === "name" && obj["type"] != "dir") {
+      /* Template strings */
+      htmlRetStr += `<li class='file-item'><i class="fas fa-file-code"></i>${obj["name"]}</li>`;
+      // console.log(`archivo: ${obj["name"]} dentro de ${folder}`);
+    }
+  }
+  return htmlRetStr;
 };
 
 export { displayData };
