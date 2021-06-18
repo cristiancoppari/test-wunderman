@@ -34,8 +34,8 @@ const displayData = (array) => {
     for (let prop in obj) {
       //Check if the value of a property is an object
       if (typeof obj[prop] === "object" && obj[prop] !== null) {
-        const folderContainer = document.createElement("ul");
-        console.log(displayData(obj[prop]));
+        // const folderContainer = document.createElement("ul");
+        // console.log(displayData(obj[prop]));
         displayData(obj[prop]);
       } else if (obj[prop] === "dir") {
         console.log(obj["name"]);

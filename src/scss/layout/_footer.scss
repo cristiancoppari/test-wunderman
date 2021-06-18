@@ -1,5 +1,5 @@
 .footer {
-  background-color: $color-black;
+  // background-color: $color-black;
   color: $color-white;
 
   &-top {
@@ -13,14 +13,14 @@
     background-color: $color-gray-light;
     color: $color-gray-dark;
     .nav-item {
-      a {
+      .nav-footer-link {
         color: $color-gray-dark;
         font-size: 1.5rem;
       }
 
       &:hover {
         a {
-          color: $colo-primary;
+          color: $color-primary;
         }
       }
     }
@@ -28,5 +28,13 @@
 
   small {
     font-size: 0.8rem;
+
+    a {
+      transition: all 0.2s ease;
+
+      &:hover {
+        color: $color-primary;
+      }
+    }
   }
 }

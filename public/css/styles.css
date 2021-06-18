@@ -77,6 +77,9 @@ body {
 a {
   color: #000; }
 
+.text-color-primary {
+  color: #4338ca; }
+
 /* Buttons */
 .btn-primary {
   background: #4338ca;
@@ -85,7 +88,6 @@ a {
     background: #352ca3; }
 
 .footer {
-  background-color: #000;
   color: #fff; }
   .footer-top a {
     color: #fff;
@@ -93,11 +95,17 @@ a {
   .footer-bottom {
     background-color: #eee;
     color: #525252; }
-    .footer-bottom a {
+    .footer-bottom .nav-item .nav-footer-link {
       color: #525252;
       font-size: 1.5rem; }
+    .footer-bottom .nav-item:hover a {
+      color: #4338ca; }
   .footer small {
     font-size: 0.8rem; }
+    .footer small a {
+      transition: all 0.2s ease; }
+      .footer small a:hover {
+        color: #4338ca; }
 
 .header {
   background-color: #fff; }
@@ -106,7 +114,7 @@ a {
 .nav {
   height: 4rem;
   width: 100%;
-  background-color: #fff;
+  background: #fff;
   z-index: 999; }
   .nav .logo-wrapper {
     height: 2rem; }
@@ -115,6 +123,11 @@ a {
     transition: all 0.2s ease; }
     .nav .btn-toggle:hover {
       color: #4338ca; }
+  @media (min-width: 768px) {
+    .nav {
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px); } }
   .nav-list {
     display: block;
     position: fixed;
@@ -125,14 +138,15 @@ a {
     background-color: #fff;
     overflow: hidden;
     z-index: 999;
-    transition: all 0.3s ease-in; }
+    transition: all 0.2s ease-in; }
     @media (min-width: 768px) {
       .nav-list {
         position: static;
         width: max-content;
         height: auto;
         display: flex;
-        flex-direction: row; } }
+        flex-direction: row;
+        background-color: transparent; } }
   .nav-item {
     cursor: pointer;
     font-weight: 600;
@@ -149,11 +163,18 @@ a {
 
 .hero {
   height: 100vh;
-  width: 100vw;
-  background-color: #525252; }
+  width: 100vw; }
 
 .info .side-left {
   width: auto; }
   @media (min-width: 768px) {
     .info .side-left {
       width: 50%; } }
+
+.cards .card-custom {
+  border-radius: 10px;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow: 8px 8px 16px #e0e0e0, -8px -8px 16px #ffffff;
+  transition: all 0.2s ease; }
+  .cards .card-custom:hover {
+    transform: translateY(-10px); }

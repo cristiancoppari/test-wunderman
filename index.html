@@ -64,13 +64,13 @@
           </button>
 
           <ul class="nav-list p-0 m-0">
-            <li class="nav-item d-block py-2 px-4 p-md-0 me-md-2">
+            <li class="nav-item d-block py-2 px-4 p-md-0 me-md-3">
               <a href="#info">Info</a>
             </li>
-            <li class="nav-item d-block py-2 px-4 p-md-0 me-md-2">
+            <li class="nav-item d-block py-2 px-4 p-md-0 me-md-3">
               <a href="#root-directory">Root</a>
             </li>
-            <li class="nav-item d-block py-2 px-4 p-md-0 me-md-2">
+            <li class="nav-item d-block py-2 px-4 p-md-0 me-md-3">
               <a href="#extra-content">Contacto</a>
             </li>
           </ul>
@@ -79,20 +79,20 @@
 
       <!-- Hero -->
       <section class="hero d-flex align-items-center">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-6 m-auto">
+        <div class="container px-4 px-3">
+          <div class="row flex-column-reverse flex-md-row">
+            <div class="col-12 col-md-6 m-auto text-center text-md-start">
               <h1>Root App</h1>
-              <p>
+              <p class="text-muted">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Consectetur, doloremque.
               </p>
               <button class="btn btn-primary">View more</button>
             </div>
-            <div class="col-12 col-md-6 d-none d-md-block">
+            <div class="col-12 col-md-6 d-md-block mb-4 mb-md-0">
               <div class="img-wrapper">
                 <img
-                  src="https://picsum.photos/300/300"
+                  src="./public/images/hero.png"
                   alt="image-1"
                   class="d-block mx-auto w-100"
                 />
@@ -104,82 +104,131 @@
     </header>
 
     <!-- Main -->
-    <main class="main">
+    <main class="main px-4 px-md-0">
       <!-- Section Info -->
-      <section class="info container py-4" id="info">
+      <section class="cards my-4">
+        <div class="container">
+          <div class="row">
+            <article class="col-12 col-md-4 px-3 mb-4 mb-md-0">
+              <div class="card-custom p-5">
+                <i class="fas fa-code fs-2 mb-4"></i>
+                <h2 class="mb-2 text-color-primary">Card Title 1</h2>
+                <p class="text-muted">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. A,
+                  natus?
+                </p>
+              </div>
+            </article>
+            <article class="col-12 col-md-4 px-3 mb-4 mb-md-0">
+              <div class="card-custom p-5">
+                <i class="fas fa-code fs-2 mb-4"></i>
+                <h2 class="mb-2 text-color-primary">Card Title 1</h2>
+                <p class="text-muted">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+                  sint!
+                </p>
+              </div>
+            </article>
+            <article class="col-12 col-md-4 px-3 mb-4 mb-md-0">
+              <div class="card-custom p-5">
+                <i class="fas fa-code fs-2 mb-4"></i>
+                <h2 class="mb-2 text-color-primary">Card Title 1</h2>
+                <p class="text-muted">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nobis, illo!
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Info -->
+      <section class="info container py-4 my-4" id="info">
         <!-- Article -->
         <article
           class="
-            article
-            d-flex
-            flex-column flex-md-row
-            justify-content-evenly
-            py-4
-            flex-wrap
+            info-article
+            row
+            mb-5
+            flex-column-reverse flex-md-row
+            align-items-center
           "
         >
-          <div class="side-left py-md-5 align-self-md-center">
+          <div class="side-left col-6 px-5 align-self-md-center">
             <h3 class="article-title">Lorem, ipsum dolor.</h3>
-            <p class="article-paragraph">
+            <p class="article-paragraph text-muted">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor,
               impedit ipsam natus recusandae mollitia rerum numquam architecto
               sunt tenetur atque est saepe repellendus eum error? Voluptate
               repellendus id ex placeat.
             </p>
           </div>
-          <div class="side-right">
+          <div class="side-right col-6 mb-4 mb-md-0">
             <div class="img-wrapper">
-              <img src="https://picsum.photos/300/300" alt="image-1" />
+              <img
+                src="./public/images/hero.png"
+                alt="image-1"
+                class="d-block mx-auto w-100"
+              />
             </div>
           </div>
         </article>
         <!-- Article -->
         <article
           class="
-            article
-            d-flex
-            flex-column flex-md-row-reverse
-            justify-content-evenly
-            py-4
+            info-article
+            row
+            flex-column-reverse flex-md-row-reverse
+            align-items-center
+            mb-5
           "
         >
-          <div class="side-left py-md-5 align-self-md-center text-md-end">
+          <div class="side-left col-6 px-5 align-self-md-center">
             <h3 class="article-title">Lorem, ipsum dolor.</h3>
-            <p class="article-paragraph">
+            <p class="article-paragraph text-muted">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor,
               impedit ipsam natus recusandae mollitia rerum numquam architecto
               sunt tenetur atque est saepe repellendus eum error? Voluptate
               repellendus id ex placeat.
             </p>
           </div>
-          <div class="side-right">
+          <div class="side-right col-6 mb-4 mb-md-0">
             <div class="img-wrapper">
-              <img src="https://picsum.photos/300/300" alt="image-1" />
+              <img
+                src="./public/images/hero.png"
+                alt="image-1"
+                class="d-block mx-auto w-100"
+              />
             </div>
           </div>
         </article>
         <!-- Article -->
         <article
           class="
-            article
-            d-flex
-            flex-column flex-md-row
-            justify-content-evenly
-            py-4
+            info-article
+            row
+            mb-5
+            flex-column-reverse flex-md-row
+            align-items-center
           "
         >
-          <div class="side-left py-md-5 align-self-md-center">
+          <div class="side-left col-6 px-5 align-self-md-center">
             <h3 class="article-title">Lorem, ipsum dolor.</h3>
-            <p class="article-paragraph">
+            <p class="article-paragraph text-muted">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor,
               impedit ipsam natus recusandae mollitia rerum numquam architecto
               sunt tenetur atque est saepe repellendus eum error? Voluptate
               repellendus id ex placeat.
             </p>
           </div>
-          <div class="side-right">
+          <div class="side-right col-6 mb-4 mb-md-0">
             <div class="img-wrapper">
-              <img src="https://picsum.photos/300/300" alt="image-1" />
+              <img
+                src="./public/images/hero.png"
+                alt="image-1"
+                class="d-block mx-auto w-100"
+              />
             </div>
           </div>
         </article>
@@ -193,13 +242,13 @@
       ></section>
 
       <!-- Section Extra Content -->
-      <section class="extra-content" id="extra-content" style="height: 100vh">
+      <!-- <section class="extra-content" id="extra-content" style="height: 100vh">
         Extra Content
-      </section>
+      </section> -->
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer bg-dark">
       <!-- Footer Top -->
       <div class="footer-top container py-4">
         <div class="row">
@@ -209,14 +258,14 @@
               <img
                 src="./public/images/bootstrap-logo.svg"
                 alt="Speed App Logo"
-                class="w-50"
+                class="w-50 d-block mx-auto mx-md-0"
               />
             </div>
           </div>
 
           <!-- Footer Nav -->
           <div class="col-12 col-md-10">
-            <div class="footer-top">
+            <div class="footer-top text-center text-md-start mt-4 mt-md-0">
               <h4>Footer Navigation</h4>
               <ul class="p-0 m-0">
                 <li>
@@ -246,21 +295,32 @@
           "
         >
           <div class="terms-and-policy">
-            <small class="fw-light">Términos y condiciones</small>
+            <small class="fw-light"
+              ><a href="#">Términos y condiciones</a></small
+            >
           </div>
           <ul class="d-flex flex-wrap justify-content-around p-0 m-0">
             <li class="nav-item p-2">
-              <a href="https://linkedin.com/cristiancoppari">
+              <a
+                href="https://linkedin.com/cristiancoppari"
+                class="nav-footer-link"
+              >
                 <i class="fab fa-linkedin"></i>
               </a>
             </li>
             <li class="nav-item p-2">
-              <a href="https://github.com/cristiancoppari">
+              <a
+                href="https://github.com/cristiancoppari"
+                class="nav-footer-link"
+              >
                 <i class="fab fa-github-square"></i>
               </a>
             </li>
             <li class="nav-item p-2">
-              <a href="https://facebook.com/cristiancoppari">
+              <a
+                href="https://facebook.com/cristiancoppari"
+                class="nav-footer-link"
+              >
                 <i class="fab fa-facebook-square"></i>
               </a>
             </li>
@@ -273,7 +333,3 @@
     <script src="public/js/app.js" type="module"></script>
   </body>
 </html>
-
-<ul>
-  <li><span>Folder</span></li>
-</ul>

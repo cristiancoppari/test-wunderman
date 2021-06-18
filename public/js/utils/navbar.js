@@ -1,7 +1,7 @@
 const toggleBtn = document.querySelector(".btn-toggle");
 const navList = document.querySelector(".nav-list");
 const navItem = document.querySelector(".nav-item");
-const navItems = [...document.querySelectorAll(".nav-item")];
+const navItems = [...document.querySelectorAll(".nav .nav-item")];
 
 const showLinksHandler = () => {
   // Dynamic Approach
@@ -11,6 +11,7 @@ const showLinksHandler = () => {
   const navItemsHeight = elementHeight * navItems.length;
 
   if (navListHeight === 0) {
+    console.log(elementHeight);
     navList.style.height = `${navItemsHeight}px`;
   } else {
     navList.style.height = 0;
