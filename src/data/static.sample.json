@@ -1,13 +1,13 @@
 {
-  "type": "dir",
+  "type": "directory",
   "name": "app",
   "children": [
     {
-      "type": "dir",
+      "type": "directory",
       "name": "public",
       "children": [
         {
-          "type": "dir",
+          "type": "directory",
           "name": "css",
           "children": [
             {
@@ -23,15 +23,15 @@
       ]
     },
     {
-      "type": "dir",
+      "type": "directory",
       "name": "src",
       "children": [
         {
-          "type": "dir",
+          "type": "directory",
           "name": "scss",
           "children": [
             {
-              "type": "dir",
+              "type": "directory",
               "name": "layout",
               "children": [
                 {

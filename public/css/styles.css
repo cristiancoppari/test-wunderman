@@ -128,7 +128,7 @@ a {
       background: rgba(255, 255, 255, 0.25);
       backdrop-filter: blur(4px);
       -webkit-backdrop-filter: blur(4px); } }
-  .nav-list {
+  .nav-container {
     display: block;
     position: fixed;
     top: 4rem;
@@ -140,12 +140,10 @@ a {
     z-index: 999;
     transition: all 0.2s ease-in; }
     @media (min-width: 768px) {
-      .nav-list {
+      .nav-container {
         position: static;
         width: max-content;
-        height: auto;
-        display: flex;
-        flex-direction: row;
+        height: auto !important;
         background-color: transparent; } }
   .nav-item {
     cursor: pointer;
@@ -179,36 +177,37 @@ a {
   .cards .card-custom:hover {
     transform: translateY(-10px); }
 
-.root-directory-tree {
-  border-radius: 10px;
-  background: linear-gradient(145deg, #e6e6e6, #ffffff);
-  box-shadow: 8px 8px 16px #e0e0e0, -8px -8px 16px #ffffff;
-  transition: all 0.2s ease;
-  width: 100%; }
-  .root-directory-tree .folder-container {
-    margin: 10px;
-    padding: 0 10px;
-    margin: 0 auto;
-    width: max-content; }
-  .root-directory-tree .folder-wrapper {
-    margin: 0;
-    padding: 0;
-    width: max-content;
-    list-style-type: none; }
-  .root-directory-tree .file-item,
-  .root-directory-tree .folder-item {
-    margin-left: -16px;
-    padding-left: 20px;
-    width: max-content;
-    list-style-type: none; }
-  .root-directory-tree .fa-folder,
-  .root-directory-tree .fa-file-code {
-    color: #525252;
-    margin: 0.5rem; }
-  .root-directory-tree li {
-    color: #525252;
+.root-directory {
+  overflow: hidden; }
+  .root-directory-tree {
+    border-radius: 10px;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow: 8px 8px 16px #e0e0e0, -8px -8px 16px #ffffff;
     transition: all 0.2s ease; }
-    .root-directory-tree li:hover {
-      color: #000; }
-    .root-directory-tree li:hover > i {
-      color: #4338ca; }
+    .root-directory-tree .folder-container {
+      margin: 10px;
+      padding: 0 10px;
+      margin: 0 auto;
+      width: max-content; }
+    .root-directory-tree .folder-wrapper {
+      margin: 0;
+      padding: 0;
+      width: max-content;
+      list-style-type: none; }
+    .root-directory-tree .file-item,
+    .root-directory-tree .folder-item {
+      margin-left: -16px;
+      padding-left: 20px;
+      width: max-content;
+      list-style-type: none; }
+    .root-directory-tree .fa-folder,
+    .root-directory-tree .fa-file-code {
+      color: #525252;
+      margin: 0.5rem; }
+    .root-directory-tree li {
+      color: #525252;
+      transition: all 0.2s ease; }
+      .root-directory-tree li:hover {
+        color: #000; }
+      .root-directory-tree li:hover > i {
+        color: #4338ca; }

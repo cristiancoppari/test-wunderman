@@ -1,38 +1,68 @@
-const toggleBtn = document.querySelector(".btn-toggle");
-const navList = document.querySelector(".nav-list");
-const navItem = document.querySelector(".nav-item");
-const navItems = [...document.querySelectorAll(".nav .nav-item")];
+const toggleBtn = document.querySelector('.btn-toggle');
+const linksContainer = document.querySelector('.nav-container');
+// const navList = document.querySelector(".nav-list");
+const navBar = document.querySelector('.nav');
+const navItem = document.querySelector('.nav-item');
+const navItems = document.querySelectorAll('.nav .nav-item');
+const scrollLinks = document.querySelectorAll('.scroll-link');
 
 const showLinksHandler = () => {
   // Dynamic Approach
-  const navListHeight = navList.getBoundingClientRect().height;
+  const navListHeight = linksContainer.getBoundingClientRect().height;
   const elementStyle = window.getComputedStyle(navItem);
-  const elementHeight = elementStyle.getPropertyValue("height").slice(0, 2);
+  // Calculate the height of the links dynamic
+  const elementHeight = elementStyle.getPropertyValue('height').slice(0, 2);
   const navItemsHeight = elementHeight * navItems.length;
 
   if (navListHeight === 0) {
     console.log(elementHeight);
-    navList.style.height = `${navItemsHeight}px`;
+    linksContainer.style.height = `${navItemsHeight}px`;
   } else {
-    navList.style.height = 0;
+    linksContainer.style.height = 0;
   }
 };
 
 const hideMenuHandler = () => {
   if (window.innerWidth > 768) {
-    navList.style.height = "auto";
+    linksContainer.style.height = 'auto';
   } else {
-    navList.style.height = 0;
+    linksContainer.style.height = 0;
   }
 };
 
-navItems.map((item) => {
-  // Closing the links when clicking in a nav item
-  // item.addEventListener("click", (e) => {
-  //   e.preventDefault();
-  //   navList.style.height = 0;
-  // });
+scrollLinks.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    // prevent default
+    e.preventDefault();
+
+    // navigate to a specific spot
+    // with the slice i remove the # and i get the id clean
+    const id = e.currentTarget.getAttribute('href').slice(1);
+    console.log(e.currentTarget);
+    const element = document.getElementById(id);
+
+    // calculate the heights
+    const navHeight = navBar.getBoundingClientRect().height;
+
+    const containerHeight = linksContainer.getBoundingClientRect().height;
+
+    let position = element.offsetTop - navHeight;
+
+    /* if (!fixedNavbar) {
+      position = position - navHeight;
+    } */
+
+    if (navHeight > 82) {
+      position = position + containerHeight;
+    }
+    // where to scroll to
+    window.scrollTo({
+      left: 0,
+      top: position,
+    });
+    linksContainer.style.height = 0;
+  });
 });
 
-toggleBtn.addEventListener("click", showLinksHandler);
-window.addEventListener("resize", hideMenuHandler);
+toggleBtn.addEventListener('click', showLinksHandler);
+window.addEventListener('resize', hideMenuHandler);

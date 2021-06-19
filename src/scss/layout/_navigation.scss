@@ -22,14 +22,12 @@
   @include respond(tablet) {
     // Glass effect
     background: rgba(255, 255, 255, 0.25);
-    // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    // border-radius: 10px;
   }
 
   // Nav List
-  &-list {
+  &-container {
     display: block;
     position: fixed;
     top: 4rem;
@@ -44,9 +42,7 @@
     @include respond(tablet) {
       position: static;
       width: max-content;
-      height: auto;
-      display: flex;
-      flex-direction: row;
+      height: auto !important;
       background-color: transparent;
     }
   }
@@ -66,7 +62,6 @@
 
     @include respond(tablet) {
       &:hover {
-        // color: $color-gray-light;
         background-color: transparent;
         color: lighten($color-primary, 15%);
 

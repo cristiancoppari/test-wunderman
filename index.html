@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Esta es una prueba técnica para Wunderman"
+    />
+    <meta name="title" content="Prueba Técnica para Wunderman" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <!-- Font Awesome -->
@@ -20,11 +25,16 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
+    <!-- Preload Scripts -->
+    <link rel="preload" href="./public/js/app.js" as="script" />
+    <!-- Aos Js Css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="public/css/styles.css" />
+    <link rel="stylesheet" href="public/css/styles.min.css" />
     <title>Speed App - Get your super car now</title>
   </head>
 
@@ -63,17 +73,19 @@
             <i class="fas fa-bars"></i>
           </button>
 
-          <ul class="nav-list p-0 m-0">
-            <li class="nav-item d-block py-2 px-4 p-md-0 me-md-3">
-              <a href="#info">Info</a>
-            </li>
-            <li class="nav-item d-block py-2 px-4 p-md-0 me-md-3">
-              <a href="#root-directory">Root</a>
-            </li>
-            <li class="nav-item d-block py-2 px-4 p-md-0 me-md-3">
-              <a href="#extra-content">Contacto</a>
-            </li>
-          </ul>
+          <div class="nav-container">
+            <ul class="nav-list p-0 m-0 d-md-flex">
+              <li class="nav-item d-block py-2 px-4 p-md-0 me-md-3">
+                <a href="#cards" class="scroll-link d-block">Cards</a>
+              </li>
+              <li class="nav-item d-block py-2 px-4 p-md-0 me-md-3">
+                <a href="#info" class="scroll-link d-block">Info</a>
+              </li>
+              <li class="nav-item d-block py-2 px-4 p-md-0 me-md-3">
+                <a href="#root-directory" class="scroll-link d-block">Root</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
 
@@ -106,10 +118,15 @@
     <!-- Main -->
     <main class="main px-4 px-md-0">
       <!-- Section Info -->
-      <section class="cards my-4">
+      <section class="cards py-5 my-5" id="cards">
         <div class="container">
           <div class="row">
-            <article class="col-12 col-md-4 px-3 mb-4 mb-md-0">
+            <article
+              class="col-12 col-md-4 px-3 mb-4 mb-md-0"
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-duration="1000"
+            >
               <div class="card-custom p-5">
                 <i class="fas fa-code fs-2 mb-4"></i>
                 <h2 class="mb-2 text-color-primary">Card Title 1</h2>
@@ -119,7 +136,12 @@
                 </p>
               </div>
             </article>
-            <article class="col-12 col-md-4 px-3 mb-4 mb-md-0">
+            <article
+              class="col-12 col-md-4 px-3 mb-4 mb-md-0"
+              data-aos="fade-up"
+              data-aos-delay="750"
+              data-aos-duration="1000"
+            >
               <div class="card-custom p-5">
                 <i class="fas fa-code fs-2 mb-4"></i>
                 <h2 class="mb-2 text-color-primary">Card Title 1</h2>
@@ -129,7 +151,12 @@
                 </p>
               </div>
             </article>
-            <article class="col-12 col-md-4 px-3 mb-4 mb-md-0">
+            <article
+              class="col-12 col-md-4 px-3 mb-4 mb-md-0"
+              data-aos="fade-up"
+              data-aos-delay="1000"
+              data-aos-duration="1000"
+            >
               <div class="card-custom p-5">
                 <i class="fas fa-code fs-2 mb-4"></i>
                 <h2 class="mb-2 text-color-primary">Card Title 1</h2>
@@ -144,7 +171,7 @@
       </section>
 
       <!-- Section Info -->
-      <section class="info container py-4 my-4" id="info">
+      <section class="info container py-5 my-5" id="info">
         <!-- Article -->
         <article
           class="
@@ -164,7 +191,11 @@
               repellendus id ex placeat.
             </p>
           </div>
-          <div class="side-right col-6 mb-4 mb-md-0">
+          <div
+            class="side-right col-6 mb-4 mb-md-0"
+            data-aos="fade-left"
+            data-aos-duration="1200"
+          >
             <div class="img-wrapper">
               <img
                 src="./public/images/hero.png"
@@ -193,7 +224,11 @@
               repellendus id ex placeat.
             </p>
           </div>
-          <div class="side-right col-6 mb-4 mb-md-0">
+          <div
+            class="side-right col-6 mb-4 mb-md-0"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+          >
             <div class="img-wrapper">
               <img
                 src="./public/images/hero.png"
@@ -222,7 +257,11 @@
               repellendus id ex placeat.
             </p>
           </div>
-          <div class="side-right col-6 mb-4 mb-md-0">
+          <div
+            class="side-right col-6 mb-4 mb-md-0"
+            data-aos="fade-left"
+            data-aos-duration="1200"
+          >
             <div class="img-wrapper">
               <img
                 src="./public/images/hero.png"
@@ -235,63 +274,14 @@
       </section>
 
       <!-- Section Root Directory -->
-      <section
-        class="
-          root-directory
-          container
-          d-flex
-          flex-wrap
-          justify-content-center
-          align-items-center
-          py-4
-          my-4
-        "
-        id="root-directory"
-      >
-        <!-- Article -->
-        <article
-          class="
-            root-directory-info
-            row
-            flex-column flex-md-row
-            align-items-center
-          "
-        >
-          <div
-            class="
-              side-left
-              col-12 col-md-6
-              px-5
-              align-self-md-center
-              text-center text-md-start
-            "
-          >
-            <h3 class="article-title">Lorem, ipsum dolor.</h3>
-            <p class="article-paragraph text-muted">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor,
-              impedit ipsam natus recusandae mollitia rerum numquam architecto
-              sunt tenetur atque est saepe repellendus eum error? Voluptate
-              repellendus id ex placeat.
-            </p>
-          </div>
-          <div
-            class="
-              side-right
-              col-12 col-md-6 col-lg-4
-              mb-md-0
-              align-self-center
-              mx-auto
-            "
-          >
-            <div class="root-directory-tree px-2 py-4"></div>
-          </div>
-        </article>
+      <section class="root-directory container py-4 my-4" id="root-directory">
+        <h2 class="folder-tree text-center mb-3">Folder Tree</h2>
+        <p class="article-paragraph text-muted text-center mx-auto w-75 mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam,
+          debitis.
+        </p>
+        <div class="root-directory-tree px-2 py-4 mx-auto"></div>
       </section>
-
-      <!-- Section Extra Content -->
-      <!-- <section class="extra-content" id="extra-content" style="height: 100vh">
-        Extra Content
-      </section> -->
     </main>
 
     <!-- Footer -->
@@ -316,13 +306,15 @@
               <h4>Footer Navigation</h4>
               <ul class="p-0 m-0">
                 <li>
-                  <a href="#info">Info</a>
+                  <a href="#cards" class="scroll-link">Info</a>
                 </li>
                 <li>
-                  <a href="#root-directory">Root Directory</a>
+                  <a href="#info">Root Directory</a>
                 </li>
                 <li>
-                  <a href="#extra-content">Extra Content</a>
+                  <a href="#root-container" class="scroll-link"
+                    >Extra Content</a
+                  >
                 </li>
               </ul>
             </div>
@@ -377,6 +369,7 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="public/js/app.js" type="module"></script>
   </body>
 </html>

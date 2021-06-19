@@ -1,11 +1,14 @@
 // Global Imports
-import "./utils/navbar.js";
+import './utils/navbar.js';
 
 // Name Imports
-import { fetchData } from "./utils/fetchData.js";
-import { displayData } from "./utils/displayData.js";
-import { presentData } from "./utils/presentData.js";
-import { URL } from "./utils/utils.js";
+import { fetchData } from './utils/fetchData.js';
+import { displayData } from './utils/displayData.js';
+import { presentData } from './utils/presentData.js';
+import { URL } from './utils/utils.js';
+
+// AOS Animations init
+AOS.init();
 
 // Init Function
 const init = async () => {
@@ -18,4 +21,4 @@ const init = async () => {
   }
 };
 
-window.addEventListener("load", init);
+window.addEventListener('load', init);
