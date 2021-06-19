@@ -2,6 +2,10 @@
   overflow: hidden;
   // width: max-content;
 
+  @include respond(tablet) {
+    width: max-content;
+  }
+
   &-tree {
     // Glass effect
     border-radius: 10px;

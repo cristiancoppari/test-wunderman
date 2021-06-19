@@ -8,8 +8,10 @@
       content="Esta es una prueba técnica para Wunderman"
     />
     <meta name="title" content="Prueba Técnica para Wunderman" />
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
@@ -18,6 +20,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <!-- Bootstrap 5 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
@@ -25,10 +28,22 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
-    <!-- Preload Scripts -->
-    <link rel="preload" href="./public/js/app.js" as="script" />
+
+    <!-- Slick Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Preload Modules -->
+    <link rel="modulepreload" href="./public/js/app.js" />
+
     <!-- Aos Js Css -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
@@ -69,7 +84,7 @@
             />
           </div>
 
-          <button class="btn-toggle fs-4 d-md-none">
+          <button class="btn-toggle fs-4 d-md-none" aria-label="toggle button">
             <i class="fas fa-bars"></i>
           </button>
 
@@ -273,6 +288,15 @@
         </article>
       </section>
 
+      <!-- Carousel Section -->
+      <section class="carousel">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 carousel-container"></div>
+          </div>
+        </div>
+      </section>
+
       <!-- Section Root Directory -->
       <section class="root-directory container py-4 my-4" id="root-directory">
         <h2 class="folder-tree text-center mb-3">Folder Tree</h2>
@@ -303,7 +327,7 @@
           <!-- Footer Nav -->
           <div class="col-12 col-md-10">
             <div class="footer-top text-center text-md-start mt-4 mt-md-0">
-              <h4>Footer Navigation</h4>
+              <h2>Footer Navigation</h2>
               <ul class="p-0 m-0">
                 <li>
                   <a href="#cards" class="scroll-link">Info</a>
@@ -343,6 +367,7 @@
               <a
                 href="https://linkedin.com/cristiancoppari"
                 class="nav-footer-link"
+                aria-label="linked button"
               >
                 <i class="fab fa-linkedin"></i>
               </a>
@@ -351,6 +376,7 @@
               <a
                 href="https://github.com/cristiancoppari"
                 class="nav-footer-link"
+                aria-label="github button"
               >
                 <i class="fab fa-github-square"></i>
               </a>
@@ -359,6 +385,7 @@
               <a
                 href="https://facebook.com/cristiancoppari"
                 class="nav-footer-link"
+                aria-label="facebook button"
               >
                 <i class="fab fa-facebook-square"></i>
               </a>
@@ -369,6 +396,17 @@
     </footer>
 
     <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="public/js/app.js" type="module"></script>
   </body>

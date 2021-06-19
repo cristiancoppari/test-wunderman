@@ -123,11 +123,6 @@ a {
     transition: all 0.2s ease; }
     .nav .btn-toggle:hover {
       color: #4338ca; }
-  @media (min-width: 768px) {
-    .nav {
-      background: rgba(255, 255, 255, 0.25);
-      backdrop-filter: blur(4px);
-      -webkit-backdrop-filter: blur(4px); } }
   .nav-container {
     display: block;
     position: fixed;
@@ -143,21 +138,20 @@ a {
       .nav-container {
         position: static;
         width: max-content;
-        height: auto !important;
-        background-color: transparent; } }
+        height: auto !important; } }
   .nav-item {
     cursor: pointer;
-    font-weight: 600;
     transition: all 0.2s ease; }
     .nav-item:hover {
       background-color: #eee; }
       .nav-item:hover a {
         color: #4338ca; }
+    .nav-item a {
+      color: #525252; }
     @media (min-width: 768px) {
       .nav-item:hover {
         background-color: transparent;
-        color: #7c74da;
-        transform: translateY(-0.2rem); } }
+        color: #7c74da; } }
 
 .hero {
   height: 100vh;
@@ -179,6 +173,9 @@ a {
 
 .root-directory {
   overflow: hidden; }
+  @media (min-width: 768px) {
+    .root-directory {
+      width: max-content; } }
   .root-directory-tree {
     border-radius: 10px;
     background: linear-gradient(145deg, #e6e6e6, #ffffff);

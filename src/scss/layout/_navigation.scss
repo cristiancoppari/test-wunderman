@@ -19,12 +19,12 @@
     }
   }
 
-  @include respond(tablet) {
-    // Glass effect
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-  }
+  // @include respond(tablet) {
+  //   // Glass effect
+  //   background: rgba(255, 255, 255, 0.25);
+  //   backdrop-filter: blur(4px);
+  //   -webkit-backdrop-filter: blur(4px);
+  // }
 
   // Nav List
   &-container {
@@ -43,14 +43,14 @@
       position: static;
       width: max-content;
       height: auto !important;
-      background-color: transparent;
+      // background-color: transparent;
     }
   }
 
   // Nav Item
   &-item {
     cursor: pointer;
-    font-weight: 600;
+    // font-weight: 600;
     transition: all 0.2s ease;
 
     &:hover {
@@ -60,12 +60,16 @@
       }
     }
 
+    a {
+      color: $color-gray-dark;
+    }
+
     @include respond(tablet) {
       &:hover {
         background-color: transparent;
         color: lighten($color-primary, 15%);
 
-        transform: translateY(-0.2rem);
+        // transform: translateY(-0.2rem);
       }
     }
   }
