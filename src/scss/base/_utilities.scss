@@ -1,9 +1,0 @@
-/* Buttons */
-.btn-primary {
-  background: $color-primary;
-  border: $color-primary;
-
-  &:hover {
-    background: darken($color-primary, 10);
-  }
-}

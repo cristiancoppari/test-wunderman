@@ -80,3 +80,19 @@ $breakpoint arguement choices:
     }
   }
 }
+
+/* Buttons */
+@mixin btn($background-color, $color) {
+  background-color: $background-color;
+  padding: 1rem;
+  transition: all 0.2s ease;
+  color: $color;
+  border: none;
+
+  &:hover {
+    background-color: darken($background-color, 10);
+    box-shadow: 0 1rem 2.5rem rgba(22, 28, 45, 0.1),
+      0 0.5rem 1rem -0.75rem rgba(22, 28, 45, 0.1);
+    transform: translate3d(0, -4px, 0);
+  }
+}

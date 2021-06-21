@@ -49,8 +49,8 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="public/css/styles.min.css" />
-    <title>Speed App - Get your super car now</title>
+    <link rel="stylesheet" href="public/css/styles.css" />
+    <title>Folder Tree App - Draw a folder tree with this app</title>
   </head>
 
   <body>
@@ -76,13 +76,15 @@
             px-4 px-md-0
           "
         >
-          <div class="logo-wrapper">
-            <img
-              src="./public/images/bootstrap-logo.svg"
-              alt="Speed App Logo"
-              class="h-100"
-            />
-          </div>
+          <a href="/">
+            <div class="logo-wrapper">
+              <img
+                src="./public/images/bootstrap-logo.svg"
+                alt="Speed App Logo"
+                class="h-100"
+              />
+            </div>
+          </a>
 
           <button class="btn-toggle fs-4 d-md-none" aria-label="toggle button">
             <i class="fas fa-bars"></i>
@@ -109,12 +111,13 @@
         <div class="container px-4 px-3">
           <div class="row flex-column-reverse flex-md-row">
             <div class="col-12 col-md-6 m-auto text-center text-md-start">
-              <h1>Root App</h1>
-              <p class="text-muted">
+              <h1 class="mb-3">Root App</h1>
+              <p class="text-muted mb-4">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Consectetur, doloremque.
               </p>
               <button class="btn btn-primary">View more</button>
+              <button class="btn btn-secondary ms-2">View folder tree</button>
             </div>
             <div class="col-12 col-md-6 d-md-block mb-4 mb-md-0">
               <div class="img-wrapper">
@@ -135,7 +138,7 @@
       <!-- Section Info -->
       <section class="cards py-5 my-5" id="cards">
         <div class="container">
-          <div class="row">
+          <div class="row slick-carousel-cards">
             <article
               class="col-12 col-md-4 px-3 mb-4 mb-md-0"
               data-aos="fade-up"
@@ -192,7 +195,8 @@
           class="
             info-article
             row
-            mb-5
+            py-5
+            my-5
             flex-column-reverse flex-md-row
             align-items-center
           "
@@ -227,7 +231,8 @@
             row
             flex-column-reverse flex-md-row-reverse
             align-items-center
-            mb-5
+            py-5
+            my-5
           "
         >
           <div class="side-left col-6 px-5 align-self-md-center">
@@ -258,7 +263,8 @@
           class="
             info-article
             row
-            mb-5
+            my-5
+            py-5
             flex-column-reverse flex-md-row
             align-items-center
           "
