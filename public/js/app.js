@@ -1,11 +1,13 @@
 // Global Imports
 import './utils/navbar.js';
+import './utils/form.js';
 
 // Name Imports
 import { fetchData } from './utils/fetchData.js';
 import { displayData } from './utils/displayData.js';
 import { presentData } from './utils/presentData.js';
-import { URL } from './utils/utils.js';
+
+const URL = '../../../src/data/mid.complexity.json';
 
 $(document).ready(() => {
   // AOS Animations init
@@ -33,7 +35,7 @@ $(document).ready(() => {
         breakpoint: 992,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           infinite: true,
         },
       },

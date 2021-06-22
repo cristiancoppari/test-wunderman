@@ -1,9 +1,19 @@
-.info {
-  .side-left {
-    width: auto;
+// .info {
+//   .side-left {
+//     width: auto;
 
-    @include respond(tablet) {
-      width: 50%;
-    }
-  }
-}
+//     @include respond(tablet) {
+//       width: 50%;
+//     }
+//   }
+// }
+
+// .form-article {
+//   form {
+//     .form-control {
+//       &::placeholder {
+//         color: red;
+//       }
+//     }
+//   }
+// }

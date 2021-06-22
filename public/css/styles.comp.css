@@ -46,6 +46,7 @@ $breakpoint arguement choices:
     }
   }
 } */
+/* Buttons */
 *,
 *::before,
 *::after {
@@ -70,6 +71,12 @@ button {
   background: none;
   border: none; }
 
+.slick-list {
+  padding: 50px 20% 50px 0 !important; }
+  @media (min-width: 1024px) {
+    .slick-list {
+      padding: 50px !important; } }
+
 body {
   font-family: "Poppins", sans-serif, sans-serif;
   color: #000; }
@@ -80,32 +87,27 @@ a {
 .text-color-primary {
   color: #4338ca; }
 
-/* Buttons */
 .btn-primary {
-  background: #4338ca;
-  border: #4338ca; }
+  background-color: #4338ca;
+  padding: 1rem;
+  transition: all 0.2s ease;
+  color: #fff;
+  border: none; }
   .btn-primary:hover {
-    background: #352ca3; }
+    background-color: #352ca3;
+    box-shadow: 0 1rem 2.5rem rgba(22, 28, 45, 0.1), 0 0.5rem 1rem -0.75rem rgba(22, 28, 45, 0.1);
+    transform: translate3d(0, -4px, 0); }
 
-.footer {
-  color: #fff; }
-  .footer-top a {
-    color: #fff;
-    font-size: 0.85rem; }
-  .footer-bottom {
-    background-color: #eee;
-    color: #525252; }
-    .footer-bottom .nav-item .nav-footer-link {
-      color: #525252;
-      font-size: 1.5rem; }
-    .footer-bottom .nav-item:hover a {
-      color: #4338ca; }
-  .footer small {
-    font-size: 0.8rem; }
-    .footer small a {
-      transition: all 0.2s ease; }
-      .footer small a:hover {
-        color: #4338ca; }
+.btn-secondary {
+  background-color: #eee;
+  padding: 1rem;
+  transition: all 0.2s ease;
+  color: #525252;
+  border: none; }
+  .btn-secondary:hover {
+    background-color: #d5d5d5;
+    box-shadow: 0 1rem 2.5rem rgba(22, 28, 45, 0.1), 0 0.5rem 1rem -0.75rem rgba(22, 28, 45, 0.1);
+    transform: translate3d(0, -4px, 0); }
 
 .header {
   background-color: #fff; }
@@ -157,12 +159,6 @@ a {
   height: 100vh;
   width: 100vw; }
 
-.info .side-left {
-  width: auto; }
-  @media (min-width: 768px) {
-    .info .side-left {
-      width: 50%; } }
-
 .cards .card-custom {
   border-radius: 10px;
   background: linear-gradient(145deg, #e6e6e6, #ffffff);
@@ -207,4 +203,24 @@ a {
       .root-directory-tree li:hover {
         color: #000; }
       .root-directory-tree li:hover > i {
+        color: #4338ca; }
+
+.footer {
+  color: #fff; }
+  .footer-top a {
+    color: #fff;
+    font-size: 0.85rem; }
+  .footer-bottom {
+    background-color: #eee;
+    color: #525252; }
+    .footer-bottom .nav-item .nav-footer-link {
+      color: #525252;
+      font-size: 1.5rem; }
+    .footer-bottom .nav-item:hover a {
+      color: #4338ca; }
+  .footer small {
+    font-size: 0.8rem; }
+    .footer small a {
+      transition: all 0.2s ease; }
+      .footer small a:hover {
         color: #4338ca; }

@@ -49,7 +49,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="public/css/styles.css" />
+    <link rel="stylesheet" href="public/css/styles.min.css" />
     <title>Folder Tree App - Draw a folder tree with this app</title>
   </head>
 
@@ -117,7 +117,11 @@
                 Consectetur, doloremque.
               </p>
               <button class="btn btn-primary">View more</button>
-              <button class="btn btn-secondary ms-2">View folder tree</button>
+              <a
+                class="btn btn-secondary ms-2 scroll-link"
+                href="#root-directory"
+                >View folder tree</a
+              >
             </div>
             <div class="col-12 col-md-6 d-md-block mb-4 mb-md-0">
               <div class="img-wrapper">
@@ -136,7 +140,7 @@
     <!-- Main -->
     <main class="main px-4 px-md-0">
       <!-- Section Info -->
-      <section class="cards py-5 my-5" id="cards">
+      <section class="cards py-5" id="cards">
         <div class="container">
           <div class="row slick-carousel-cards">
             <article
@@ -147,7 +151,7 @@
             >
               <div class="card-custom p-5">
                 <i class="fas fa-code fs-2 mb-4"></i>
-                <h2 class="mb-2 text-color-primary">Card Title 1</h2>
+                <h2 class="mb-2 text-color-primary fs-4">Card Title</h2>
                 <p class="text-muted">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. A,
                   natus?
@@ -162,7 +166,7 @@
             >
               <div class="card-custom p-5">
                 <i class="fas fa-code fs-2 mb-4"></i>
-                <h2 class="mb-2 text-color-primary">Card Title 1</h2>
+                <h2 class="mb-2 text-color-primary fs-4">Card Title</h2>
                 <p class="text-muted">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
                   sint!
@@ -177,7 +181,7 @@
             >
               <div class="card-custom p-5">
                 <i class="fas fa-code fs-2 mb-4"></i>
-                <h2 class="mb-2 text-color-primary">Card Title 1</h2>
+                <h2 class="mb-2 text-color-primary fs-4">Card Title</h2>
                 <p class="text-muted">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Nobis, illo!
@@ -189,7 +193,7 @@
       </section>
 
       <!-- Section Info -->
-      <section class="info container py-5 my-5" id="info">
+      <section class="info container py-5 overflow-hidden" id="info">
         <!-- Article -->
         <article
           class="
@@ -201,7 +205,7 @@
             align-items-center
           "
         >
-          <div class="side-left col-6 px-5 align-self-md-center">
+          <div class="side-left col-12 col-md-6 px-5 align-self-md-center">
             <h3 class="article-title">Lorem, ipsum dolor.</h3>
             <p class="article-paragraph text-muted">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor,
@@ -211,7 +215,7 @@
             </p>
           </div>
           <div
-            class="side-right col-6 mb-4 mb-md-0"
+            class="side-right col-12 col-md-6 mb-5 mb-md-0"
             data-aos="fade-left"
             data-aos-duration="1200"
           >
@@ -227,41 +231,92 @@
         <!-- Article -->
         <article
           class="
-            info-article
+            form-article
             row
-            flex-column-reverse flex-md-row-reverse
+            flex-column-reverse flex-md-row
             align-items-center
+            justify-content-between
             py-5
             my-5
           "
         >
-          <div class="side-left col-6 px-5 align-self-md-center">
-            <h3 class="article-title">Lorem, ipsum dolor.</h3>
-            <p class="article-paragraph text-muted">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor,
-              impedit ipsam natus recusandae mollitia rerum numquam architecto
-              sunt tenetur atque est saepe repellendus eum error? Voluptate
-              repellendus id ex placeat.
-            </p>
+          <div class="side-left col-12 col-md-6 col-lg-5 align-self-md-center">
+            <div class="form-card rounded-3 shadow-lg overflow-hidden p-5">
+              <div class="form-card-header mb-2">
+                <h2 class="text-dark">Contact us now</h2>
+                <p class="text-muted">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Saepe, eius?
+                </p>
+              </div>
+              <div class="form-card-body">
+                <form action="POST" class="d-flex flex-column flex-wrap">
+                  <div class="form-floating mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="floatingInput"
+                      placeholder="Name"
+                    />
+                    <label for="floatingInput" class="text-muted">Name</label>
+                  </div>
+                  <div class="form-floating">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="floatingPassword"
+                      placeholder="Mail"
+                    />
+                    <label for="floatingPassword" class="text-muted"
+                      >Mail</label
+                    >
+                  </div>
+                  <button type="submit" class="btn btn-primary mt-4">
+                    Contact us
+                  </button>
+                </form>
+              </div>
+            </div>
           </div>
           <div
-            class="side-right col-6 mb-4 mb-md-0"
+            class="
+              side-right
+              col-12 col-md-6
+              mb-4 mb-md-0
+              order-md-2
+              p-md-4 p-lg-2
+            "
             data-aos="fade-right"
             data-aos-duration="1200"
           >
-            <div class="img-wrapper">
-              <img
-                src="./public/images/hero.png"
-                alt="image-1"
-                class="d-block mx-auto w-100"
-              />
+            <h2>Lorem, ipsum.</h2>
+            <p class="text-muted">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut rem
+              itaque quo unde labore? Voluptate repudiandae odio nobis earum
+              consequatur.
+            </p>
+            <div class="item-wrapper d-flex align-items-center py-2">
+              <i class="fas fa-check-circle text-success"></i>
+              <p class="text-muted ms-2 mb-0">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="item-wrapper d-flex align-items-center py-2">
+              <i class="fas fa-check-circle text-success"></i>
+              <p class="text-muted ms-2 mb-0">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="item-wrapper d-flex align-items-center py-2">
+              <i class="fas fa-check-circle text-success"></i>
+              <p class="text-muted ms-2 mb-0">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="item-wrapper d-flex align-items-center py-2">
+              <i class="fas fa-check-circle text-success"></i>
+              <p class="text-muted ms-2 mb-0">Lorem ipsum dolor sit amet.</p>
             </div>
           </div>
         </article>
         <!-- Article -->
         <article
           class="
-            info-article
+            more-info-article
             row
             my-5
             py-5
@@ -269,17 +324,32 @@
             align-items-center
           "
         >
-          <div class="side-left col-6 px-5 align-self-md-center">
-            <h3 class="article-title">Lorem, ipsum dolor.</h3>
-            <p class="article-paragraph text-muted">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor,
-              impedit ipsam natus recusandae mollitia rerum numquam architecto
-              sunt tenetur atque est saepe repellendus eum error? Voluptate
-              repellendus id ex placeat.
+          <div class="side-left col-12 col-md-6 align-self-md-center">
+            <h3 class="article-title mb-2">Lorem, ipsum dolor.</h3>
+            <p class="article-paragraph text-muted mb-4">
+              Lorem ipsum dolor sit, amet consectetur.
             </p>
+            <div class="info-wrapper d-flex mb-2">
+              <i class="fas fa-folder-open text-success fs-2"></i>
+              <p class="text-muted ms-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eos.
+              </p>
+            </div>
+            <div class="info-wrapper d-flex mb-2">
+              <i class="fas fa-sitemap text-success fs-2"></i>
+              <p class="text-muted ms-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eos.
+              </p>
+            </div>
+            <div class="info-wrapper d-flex mb-2">
+              <i class="fas fa-save text-success fs-2"></i>
+              <p class="text-muted ms-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A, eos.
+              </p>
+            </div>
           </div>
           <div
-            class="side-right col-6 mb-4 mb-md-0"
+            class="side-right col-12 col-md-6 mb-4 mb-md-0"
             data-aos="fade-left"
             data-aos-duration="1200"
           >
@@ -318,9 +388,9 @@
     <footer class="footer bg-dark">
       <!-- Footer Top -->
       <div class="footer-top container py-4">
-        <div class="row">
+        <div class="row justify-content-center justify-content-md-start">
           <!-- Footer Logo -->
-          <div class="col-12 col-md-2">
+          <div class="col-6 col-md-2">
             <div class="logo-wrapper mb-2">
               <img
                 src="./public/images/bootstrap-logo.svg"
@@ -414,6 +484,7 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="public/js/app.js" type="module"></script>
   </body>
 </html>

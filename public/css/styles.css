@@ -159,12 +159,6 @@ a {
   height: 100vh;
   width: 100vw; }
 
-.info .side-left {
-  width: auto; }
-  @media (min-width: 768px) {
-    .info .side-left {
-      width: 50%; } }
-
 .cards .card-custom {
   border-radius: 10px;
   background: linear-gradient(145deg, #e6e6e6, #ffffff);
